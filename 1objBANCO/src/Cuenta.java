@@ -13,6 +13,24 @@ public class Cuenta {
     }
 
 
+    //Sobreccarga de objeatos
+
+
+    public Cuenta(String dni, double saldo) {
+        this.titular = "";
+        this.dni = dni;
+        this.saldo = saldo;
+    }
+
+    public Cuenta(String dni, String titular, double saldo) {
+        this.titular = titular;
+        this.dni = dni;
+        this.saldo = saldo;
+    }
+
+
+
+
     //Constructures
     public void ingresar(double importe) {
         this.saldo += importe;
