@@ -5,12 +5,15 @@ public class Cuenta {
     private double saldo;
 
 
+    //clase CUENTA
     public Cuenta(String dni, String titular) {
         this.titular = titular;
         this.dni = dni;
         this.saldo = 0.0;
     }
 
+
+    //Constructures
     public void ingresar(double importe) {
         this.saldo += importe;
     }
